@@ -41,7 +41,8 @@ To eliminate manual paperwork in hostel management by providing a **centralized 
 
 ## 📸 Screenshots
 
-*(Add screenshots of your project here for better presentation)*
+<img width="1918" height="1035" alt="image" src="https://github.com/user-attachments/assets/7efe8d74-5e4e-40e1-9dcf-db5ed9c2d9a6" />
+
 
 ---
 
