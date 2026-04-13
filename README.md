@@ -50,7 +50,7 @@ To eliminate manual paperwork in hostel management by providing a **centralized 
 1. Clone the repository
 
    ```bash
-   git clone https://github.com/Shiiivaniii/your-repo-name.git
+    git clone https://github.com/Shiiivaniii/Hostel-Management-Website.git
    ```
 
 2. Move the project to your XAMPP `htdocs` folder
@@ -66,7 +66,7 @@ To eliminate manual paperwork in hostel management by providing a **centralized 
 5. Run the project in browser:
 
    ```bash
-   http://localhost/your-folder-name
+   http://localhost/sl_project
    ```
 
 ---
