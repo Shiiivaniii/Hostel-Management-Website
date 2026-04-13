@@ -1,0 +1,1243 @@
+/* ============================= */
+/* ANNOUNCEMENT PAGE NAVBAR */
+/* ============================= */
+
+/* ============================= */
+/* NAVBAR MATCHING FOOTER STYLE */
+/* ============================= */
+html, body {
+  overflow-x: hidden;
+}
+/* ============================= */
+/* COMPACT NAVBAR (FOOTER HEIGHT MATCH) */
+/* ============================= */
+/* ============================= */
+/* ANNOUNCEMENT PAGE BACKGROUND */
+/* ============================= */
+
+body {
+  margin: 0;
+  min-height: 100vh;
+
+  background:
+    linear-gradient(
+      rgba(33, 42, 62, 0.65),
+      rgba(33, 42, 62, 0.75)
+    ),
+    url("NIT_Kurukshetra_cutoff_AR6OZqE.avif");
+
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+/* ============================= */
+/* REMOVE UNDERLINES FROM BUTTON LINKS */
+/* ============================= */
+a {
+  text-decoration: none;
+}
+.top-nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  padding: 8px 25px;
+
+  backdrop-filter: blur(14px);
+  background: rgba(7, 18, 36, 0.9);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.35);
+
+  z-index: 20;
+  box-sizing: border-box;
+}
+
+/* LEFT SIDE */
+.brand {
+  display: flex;
+  flex-direction: column;   /* STACKED */
+  align-items: center;
+  justify-content: center;
+  gap: 4px;
+  color: white;
+  text-align: center;
+}
+
+/* If you add logo image later */
+.brand img {
+  height: 38px;
+  width: 38px;
+  border-radius: 50%;
+  object-fit: cover;
+  background: white;
+  padding: 4px;
+}
+.brand-text {
+  display: flex;
+  flex-direction: column;
+  line-height: 1.1;
+}
+
+.brand-text {
+  font-size: 0.85rem;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+}
+
+.brand-text span {
+  font-size: 0.7rem;
+  font-weight: 400;
+  opacity: 0.8;
+}
+
+/* RIGHT SIDE ACTIONS */
+.top-actions {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  flex-shrink: 0;   /* IMPORTANT — prevents pushing out */
+}
+
+/* Logout button style */
+.top-actions a {
+  padding: 6px 16px;
+  border-radius: 999px;
+  background: linear-gradient(135deg, #03256c, #505d68);
+  color: white;
+  font-weight: 500;
+  transition: 0.2s ease;
+}
+
+.top-actions a:hover {
+  background: var(--accent-strong);
+  transform: translateY(-2px);
+}
+.top-actions span {
+  color: white;
+  font-size: 0.95rem;
+  font-weight: 500;
+  white-space: nowrap;
+}
+/* ============================= */
+/* ANNOUNCEMENT PAGE LAYOUT */
+/* ============================= */
+
+/* Logout Button Safe Styling */
+/* Logout button */
+.logout-btn {
+  padding: 6px 16px;
+  border-radius: 999px;
+  background: linear-gradient(135deg, #03256c, #505d68);
+  color: white !important;
+  font-weight: 600;
+  font-size: 0.9rem;
+  transition: 0.2s ease;
+  white-space: nowrap;
+}
+rooms-map-trigger
+.logout-btn:hover {
+  background: var(--accent-strong);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 14px rgba(3, 37, 108, 0.4);
+}
+
+
+/* HEADER */
+/* ============================= */
+
+/* ============================= */
+/* ANNOUNCEMENT CARD */
+/* ============================= */
+
+.card {
+  padding: 30px;
+  border-radius: 24px;
+width: 100%;
+  background:
+  radial-gradient(circle at top left, rgba(3, 37, 108, 0.22) 0, transparent 60%),
+  radial-gradient(circle at bottom right, rgba(80, 93, 104, 0.12) 0, transparent 65%),
+  linear-gradient(135deg, #fbfffe, #e4edf7);
+
+  border: 1px solid rgba(148, 163, 184, 0.7);
+  box-shadow: var(--shadow-soft);
+}
+
+.card h2 {
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: #021b4a;
+  border-left: 4px solid #03256c;
+  padding-left: 14px;
+  margin-bottom: 20px;
+}
+.announcements-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.announcements-list li {
+    padding: 20px;
+    border-radius: 16px;
+    margin-bottom: 18px;
+    background: white;
+    border: 1px solid rgba(148, 163, 184, 0.4);
+    box-shadow: 0 10px 25px rgba(3, 37, 108, 0.1);
+    transition: 0.2s ease;
+}
+
+.announcements-list li:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 14px 30px rgba(3, 37, 108, 0.2);
+}
+
+.announcement-title {
+    font-size: 1.1rem;
+  font-weight: 600;
+  color: #03256c;
+  margin-bottom: 6px;
+}
+
+.announcement-meta {
+  font-size: 0.85rem;
+  color: var(--text-muted);
+  margin-bottom: 10px;
+}
+
+.announcement-body {
+  font-size: 0.95rem;
+  line-height: 1.6;
+  color: var(--text);
+}
+
+.announcement-attachment a {
+  display: inline-block;
+  margin-top: 10px;
+  font-size: 0.85rem;
+  padding: 6px 12px;
+  border-radius: 999px;
+  background: linear-gradient(135deg, #03256c, #505d68);
+  color: white;
+  transition: 0.2s ease;
+}
+
+.announcement-attachment a:hover {
+  background: var(--accent-strong);
+}
+/* Only show when NOT hidden */
+.admin-modal-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.6);
+  backdrop-filter: blur(6px);
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  z-index: 9999;
+}
+
+/* IMPORTANT — this preserves JS functionality */
+.admin-modal-overlay:not([hidden]) {
+  display: flex;
+}
+
+.admin-modal-overlay[hidden] {
+  display: none !important;
+}
+
+.admin-modal {
+  width: 100%;
+  max-width: 600px;
+  background: white;
+  border-radius: 20px;
+  padding: 24px;
+  box-shadow: 0 20px 45px rgba(0, 0, 0, 0.4);
+}
+
+.admin-modal-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.admin-modal-close {
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+/* ============================= */
+/* ADMIN ADD BUTTON FIX */
+/* ============================= */
+
+.admin-tools-inline {
+  display: block;   
+  margin: 12px 0 20px 0;
+  
+}
+
+.admin-add-trigger, .btn {
+  padding: 8px 18px;
+  border-radius: 999px;
+  background: linear-gradient(135deg, #03256c, #505d68);
+  color: white !important;
+  font-weight: 500;
+  border: none;
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+.admin-add-trigger:hover,.btn:hover {
+  background: var(--accent-strong);
+  transform: translateY(-2px);
+  box-shadow: 0 10px 20px rgba(3, 37, 108, 0.4);
+}
+.admin-modal-overlay {
+  z-index: 9999;
+}
+/* ===== Restore Bottom Bar ===== */
+/* ============================= */
+/* PREMIUM FOOTER BAR */
+/* ============================= */
+
+.bottom-bar {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+
+  padding: 18px 20px;
+
+  backdrop-filter: blur(14px);
+  background: rgba(7, 18, 36, 0.9);
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+  box-shadow: 0 -8px 25px rgba(0, 0, 0, 0.4);
+
+  z-index: 10;
+}
+.bottom-bar a {
+  padding: 8px 20px;
+  border-radius: 999px;
+  background: linear-gradient(135deg, #03256c, #505d68);
+  color: white !important;
+  font-weight: 500;
+  font-size: 0.9rem;
+  transition: 0.2s ease;
+  display: inline-block;
+}
+
+.bottom-bar a:hover {
+  background: var(--accent-strong);
+  transform: translateY(-2px);
+  box-shadow: 0 8px 18px rgba(3, 37, 108, 0.4);
+}
+
+.admin-modal-overlay[hidden] {
+  display: none;
+}
+/* ============================= */
+/* CENTER ANNOUNCEMENT CARD */
+/* ============================= */
+
+/* ============================= */
+/* ADMIN MODAL FORM STYLING */
+/* ============================= */
+
+/* Modal title */
+.admin-modal h2 {
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: #03256c;
+  margin-bottom: 20px;
+}
+
+/* Form layout spacing */
+.admin-modal form {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+/* Labels */
+.admin-modal label {
+  font-weight: 600;
+  font-size: 0.9rem;
+  color: #021b4a;
+  margin-bottom: 4px;
+  display: block;
+}
+
+/* Inputs + Textarea */
+.admin-modal input[type="text"],
+.admin-modal textarea,
+.admin-modal input[type="file"] {
+  width: 100%;
+  padding: 10px 14px;
+  border-radius: 12px;
+  border: 1px solid rgba(148, 163, 184, 0.6);
+  background: #f8fafc;
+  font-size: 0.9rem;
+  transition: 0.2s ease;
+  box-sizing: border-box;
+}
+
+/* Focus effect */
+.admin-modal input:focus,
+.admin-modal textarea:focus {
+  outline: none;
+  border-color: #03256c;
+  box-shadow: 0 0 0 3px rgba(3, 37, 108, 0.15);
+  background: white;
+}
+
+/* Textarea resize */
+.admin-modal textarea {
+  resize: vertical;
+  min-height: 80px;
+}
+
+/* File input spacing */
+.admin-modal input[type="file"] {
+  background: white;
+  padding: 8px;
+}
+
+/* Save button */
+.admin-modal button[type="submit"] {
+  margin-top: 10px;
+  padding: 10px 20px;
+  border-radius: 999px;
+  border: none;
+  background: linear-gradient(135deg, #03256c, #505d68);
+  color: white;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.2s ease;
+  align-self: flex-start;
+}
+
+.admin-modal button[type="submit"]:hover {
+  background: var(--accent-strong);
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(3, 37, 108, 0.4);
+}
+.page-wrapper {
+  max-width: 900px;
+  margin: 110px auto 0 auto;  /* below navbar */
+  padding: 0 20px 120px 20px; /* space for footer */
+}
+
+
+
+
+  /* ============================= */
+/* SIGN IN PAGE LAYOUT */
+/* ============================= */
+
+
+.signin-page body,
+.signin-page html {
+  overflow: hidden;
+  height: 100vh;
+}
+/* ============================= */
+/* SIGN IN CARD WIDTH FIX */
+/* ============================= */
+
+.signin-page .page-wrapper {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 20px;
+}
+/* ============================= */
+/* SIGN IN HEADER */
+/* ============================= */
+
+/* ============================= */
+/* REFINED SIGN IN HEADER */
+/* ============================= */
+
+/* ============================= */
+/* PROFESSIONAL SIGN IN HEADER */
+/* ============================= */
+
+.signin-page header {
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.signin-page header h1 {
+    font-size: 1.9rem;
+    font-weight: 600;
+    color: #ffffff;
+    letter-spacing: 0.04em;
+    margin-bottom: 6px;
+}
+
+.signin-page header::after {
+    content: "";
+    display: block;
+    width: 50px;
+    height: 2px;
+    background: rgba(255, 255, 255, 0.4);
+    margin: 12px auto 0 auto;
+    border-radius: 2px;
+}
+.signin-page header p {
+    font-size: 0.9rem;
+    color: rgba(255, 255, 255, 0.7);
+    margin: 0;
+}
+.signin-page .card {
+    padding: 30px;
+  width: 100%;
+  max-width: 380px;   /* Controls card size */
+  margin: 0 auto;
+}
+/* ============================= */
+/* SIGN IN INPUTS */
+/* ============================= */
+
+.signin-page #sign-in-form input[type="text"],
+.signin-page #sign-in-form input[type="password"] {
+  width: 90%;
+  padding: 10px 14px;
+  border-radius: 12px;
+  border: 1px solid rgba(148, 163, 184, 0.6);
+  background: #f8fafc;
+  font-size: 0.95rem;
+  transition: 0.2s ease;
+}
+
+.signin-page #sign-in-form input:focus {
+  outline: none;
+  border-color: #03256c;
+  box-shadow: 0 0 0 3px rgba(3, 37, 108, 0.15);
+  background: white;
+}
+/* ============================= */
+/* SIGN IN BUTTON */
+/* ============================= */
+
+.signin-page .signin-submit-btn {
+  padding: 8px 22px;
+  border-radius: 999px;
+  border: none;
+  background: linear-gradient(135deg, #03256c, #505d68);
+  color: white;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.2s ease;
+ display: block;
+   margin: 20px auto 0 auto; 
+}
+
+.signin-page .signin-submit-btn:hover {
+  background: var(--accent-strong);
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(3, 37, 108, 0.4);
+}
+  
+
+
+
+/* ================================= */
+/* LEAVE PAGE STYLING */
+/* ================================= */
+
+/* =============================== */
+/* LEAVE PAGE – HIGH SPECIFICITY */
+/* =============================== */
+/* =============================== */
+/* LEAVE PAGE (SCOPED PROPERLY) */
+/* =============================== */
+/* =============================== */
+/* LEAVE PAGE CLEAN FIX */
+/* =============================== */
+
+.leave-page {
+  height: 100vh;        /* full viewport height */
+  overflow: hidden;     /* prevent scrolling */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 20px;     /* remove top/bottom padding to avoid extra scroll */
+  box-sizing: border-box;
+}
+.leave-page .leave-subtitle {
+    font-size: 0.95rem;
+    color: #475569;
+    margin-bottom: 20px;
+}
+.leave-page .leave-card {
+  width: 100%;
+  max-width: 750px;
+  background: white;
+  border-radius: 20px;
+  padding: 35px;
+  box-shadow: 0 20px 45px rgba(0, 0, 0, 0.25);
+}
+
+.leave-page .leave-form {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.leave-page .form-row {
+  display: flex;
+  gap: 20px;
+}
+
+.leave-page .form-group {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.leave-page .form-group input,
+.leave-page .form-group textarea {
+  padding: 10px 14px;
+  border-radius: 10px;
+  border: 1px solid #d1d5db;
+}
+
+.leave-page .leave-btn {
+  background: linear-gradient(135deg, #03256c, #505d68);
+  color: white;
+  border-radius: 999px;
+  padding: 8px 20px;
+  border: none;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.leave-page .leave-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 18px rgba(3, 37, 108, 0.4);
+}
+
+@media (max-width: 600px) {
+  .leave-page .form-row {
+    flex-direction: column;
+  }
+}
+.leave-page .back-btn {
+    background: linear-gradient(135deg, #03256c, #505d68);
+    color: white;
+    padding: 8px 20px;
+    border-radius: 999px;
+    border: none;
+    font-weight: 600;
+    cursor: pointer;
+    text-decoration: none;
+    display: inline-block;
+    margin-bottom: 20px;
+    transition: 0.2s ease;
+}
+
+.leave-page .back-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 18px rgba(3, 37, 108, 0.4);
+
+}
+
+/* Staff Details Page */
+/* PAGE WRAPPER */
+.staff-details .back-btn {
+    display: inline-block;
+    padding: 8px 20px;
+    border-radius: 999px;
+    background: linear-gradient(135deg, #03256c, #505d68);
+    color: white;
+    font-weight: 600;
+    text-decoration: none;
+    margin-bottom: 20px;
+    transition: 0.2s ease;
+}
+
+.staff-details .back-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 18px rgba(3, 37, 108, 0.4);
+    background: var(--accent-strong);
+}
+.staff-details .page-wrapper {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+/* BACK BUTTON CONTAINER */
+.staff-details .back-container {
+    display: flex;
+    justify-content: flex-start; /* aligns back button left */
+}
+
+/* HEADER CARD */
+.staff-details .staff-header-card {
+    padding: 30px;
+    border-radius: 24px;
+    background:
+      radial-gradient(circle at top left, rgba(3, 37, 108, 0.12) 0, transparent 60%),
+      radial-gradient(circle at bottom right, rgba(80, 93, 104, 0.08) 0, transparent 65%),
+      linear-gradient(135deg, #fbfffe, #e4edf7);
+    border: 1px solid rgba(148, 163, 184, 0.7);
+    box-shadow: 0 12px 28px rgba(0, 0, 0, 0.15);
+    text-align: center;
+}
+
+/* STAFF HEADER TEXT */
+.staff-details .staff-header-card h1 {
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: #03256c;
+    margin-bottom: 8px;
+}
+
+.staff-details .staff-header-card p {
+    font-size: 0.95rem;
+    color: #475569;
+    margin: 0;
+}
+
+/* STAFF CARDS GRID */
+.staff-details .staff-list-card .staff-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    margin-top: 15px;
+}
+
+/* INDIVIDUAL STAFF CARD */
+.staff-details .staff-card {
+    padding: 16px 20px;
+    border-radius: 16px;
+    background: white;
+    border: 1px solid rgba(148, 163, 184, 0.4);
+    box-shadow: 0 8px 20px rgba(3, 37, 108, 0.08);
+    transition: 0.2s ease;
+}
+
+.staff-details .staff-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 12px 25px rgba(3, 37, 108, 0.15);
+}
+
+/* STAFF CARD TEXT */
+.staff-details .staff-position {
+    font-weight: 600;
+    font-size: 1rem;
+    color: #03256c;
+}
+
+.staff-details .staff-name {
+    font-size: 0.95rem;
+    color: #111827;
+    margin-top: 4px;
+}
+
+.staff-details .staff-contact,
+.staff-details .staff-hours {
+    font-size: 0.85rem;
+    color: #6b7280;
+    margin-top: 4px;
+}
+
+/* RESPONSIVE FIXES */
+@media (max-width: 600px) {
+    .staff-details .staff-list-card .staff-list {
+        grid-template-columns: 1fr;
+    }
+}
+/* ============================= */
+/* MANAGE STAFF PAGE STYLING */
+/* ============================= */
+.manage-staff {
+  font-family: 'Segoe UI', sans-serif;
+  background:
+    linear-gradient(rgba(33, 42, 62, 0.7), rgba(33, 42, 62, 0.75)),
+    url("NIT_Kurukshetra_cutoff_AR6OZqE.avif");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  min-height: 100vh;
+  padding-bottom: 120px; /* space for footer */
+}
+
+.manage-staff .page-wrapper {
+  max-width: 900px;
+  margin: 110px auto 0 auto; /* below navbar */
+  padding: 0 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+/* HEADER */
+.manage-staff header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+  color: white;
+}
+
+.manage-staff header h1 {
+  font-size: 1.8rem;
+  font-weight: 700;
+  margin: 0;
+}
+
+.manage-staff .btn-back {
+
+  padding: 8px 18px;
+  border-radius: 999px;
+  background: linear-gradient(135deg, #03256c, #505d68);
+  color: white;
+  font-weight: 500;
+  text-decoration: none;
+  transition: 0.2s ease;
+}
+
+.manage-staff .btn-back:hover {
+  background: var(--accent-strong, #505d68);
+  transform: translateY(-2px);
+}
+.manage-staff .btn-add {
+font-family: 'Times New Roman', Times, serif;
+  padding: 10px 18px;
+  border-radius: 999px;
+  background: linear-gradient(135deg, #03256c, #505d68);
+  color: white;
+  text-decoration: none;
+  transition: 0.2s ease;
+}
+
+.manage-staff .btn-add:hover {
+  background: var(--accent-strong, #505d68);
+  transform: translateY(-2px);
+}
+
+
+/* CARD GRID */
+/* ============================= */
+/* MANAGE STAFF PAGE – COLUMN LAYOUT */
+/* ============================= */
+.manage-staff .card-container {
+  display: flex;
+  flex-direction: column; /* stack cards vertically */
+  gap: 20px;
+}
+
+.manage-staff .staff-card {
+  width: 100%;          /* full width of container */
+  max-width: 750px;     /* optional max width */
+  margin: 0 auto;       /* center cards horizontally */
+  padding: 25px;
+  border-radius: 20px;
+  background: 
+    radial-gradient(circle at top left, rgba(3, 37, 108, 0.12) 0, transparent 60%),
+    radial-gradient(circle at bottom right, rgba(80, 93, 104, 0.08) 0, transparent 65%),
+    linear-gradient(135deg, #fbfffe, #e4edf7);
+  border: 1px solid rgba(148, 163, 184, 0.6);
+  box-shadow: 0 14px 35px rgba(3, 37, 108, 0.1);
+  transition: 0.3s ease;
+}
+
+.manage-staff .staff-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 20px 45px rgba(3, 37, 108, 0.15);
+}
+
+/* STAFF INFO */
+.manage-staff .staff-title {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #03256c;
+  margin-bottom: 8px;
+}
+
+.manage-staff .staff-info {
+  font-size: 0.95rem;
+  color: #374151;
+  margin-top: 6px;
+}
+
+/* ACTION BUTTONS */
+.manage-staff .actions {
+  margin-top: 15px;
+  display: flex;
+  gap: 10px;
+}
+
+.manage-staff .btn-edit,
+.manage-staff .btn-delete {
+  padding: 6px 16px;
+  border-radius: 999px;
+  color: white;
+  font-weight: 500;
+  text-decoration: none;
+  transition: 0.2s ease;
+  display: inline-block;
+}
+
+.manage-staff .btn-edit {
+    background: linear-gradient(135deg, #03256c, #505d68); /* same as Update button */
+    color: white;
+}
+
+.manage-staff .btn-edit:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 18px rgba(3, 37, 108, 0.4);
+}
+
+.manage-staff .btn-delete {
+    background: #6b7280; /* same as Back button */
+    color: white;
+}
+
+.manage-staff .btn-delete:hover {
+    background: #4b5563;
+}
+/* RESPONSIVE */
+@media (max-width: 600px) {
+  .manage-staff .page-wrapper {
+    margin-top: 90px;
+  }
+  .manage-staff .card-container {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* ---------- Edit Staff Page ---------- */
+.edit-staff .page-wrapper {
+    max-width: 700px;        /* Wider than default */
+    margin: 60px auto;       /* Centered vertically with top margin */
+    padding: 20px;
+}
+
+
+.edit-staff .edit-card {
+    background: white;
+    border-radius: 20px;
+    padding: 35px 30px;
+    box-shadow: 0 20px 45px rgba(0, 0, 0, 0.25);
+    max-width: 800px;
+    margin: 40px auto;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.edit-staff .back-wrapper {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.edit-staff .edit-card h1 {
+    font-size: 1.8rem;
+    font-weight: 600;
+    color: #051f43;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.edit-staff .edit-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    background: white;
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 20px 45px rgba(0, 0, 0, 0.25);
+}
+
+.edit-staff .edit-form input {
+    width: 90%;
+    padding: 10px 14px;
+    border-radius: 12px;
+    border: 1px solid #d1d5db;
+    font-size: 0.95rem;
+    transition: 0.2s ease;
+}
+
+
+.edit-staff .edit-form input:focus {
+    outline: none;
+    border-color: #03256c;
+    box-shadow: 0 0 0 3px rgba(3, 37, 108, 0.15);
+    background: white;
+}
+
+.edit-staff .form-actions {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.edit-staff .edit-form button[type="submit"] {
+    padding: 10px 20px;
+    border-radius: 999px;
+    border: none;
+    background: #03256c;
+    color: white;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.2s ease;
+}
+
+.edit-staff .edit-form button[type="submit"]:hover {
+    background: #1f40af;
+}
+/* Responsive adjustments */
+@media (max-width: 600px) {
+    .edit-staff .edit-card {
+        padding: 25px 20px;
+    }
+}
+
+
+/* ---------- Edit Staff Page Back Button ---------- */
+.edit-staff .back-link {
+    padding: 10px 18px;
+    background: #6b7280;
+    color: white;
+    border-radius: 999px;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 0.9rem;
+    transition: 0.2s ease;
+}
+
+.edit-staff .back-link:hover {
+    background: #4b5563;
+}
+
+/* -------------------------------
+   Add/Edit Staff Form Styling
+---------------------------------*/
+
+/* -------------------------------
+   Add Staff Page Styling
+---------------------------------*/
+
+/* -------------------------------
+   Add Staff Page Styling
+---------------------------------*/
+
+.add-staff .page-wrapper {
+    max-width: 700px;
+    margin: 40px auto;
+    padding: 20px;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+.add-staff h1 {
+    text-align: center;
+    font-size: 28px;
+    font-weight: 700;
+    color: #162037;
+    margin-bottom: 30px;
+
+}
+
+.add-staff .staff-card {
+    background: #ffffff;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 6px 18px rgba(0,0,0,0.06);
+    transition: 0.3s;
+    margin: auto;
+}
+
+.add-staff .staff-card:hover {
+    transform: translateY(-3px);
+}
+
+.add-staff form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.add-staff .form-row {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.add-staff .form-group {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.add-staff .form-group label {
+    font-size: 14px;
+    font-weight: 500;
+    color: #1f2937;
+    margin-bottom: 5px;
+}
+
+.add-staff .form-group input {
+    padding: 10px 12px;
+    border: 1px solid #d1d5db;
+    border-radius: 8px;
+    font-size: 14px;
+    color: #111827;
+    outline: none;
+    transition: 0.3s;
+}
+
+.add-staff .form-group input:focus {
+    border-color: #4f46e5;
+    box-shadow: 0 0 0 2px rgba(79, 70, 229, 0.2);
+}
+
+/* -------------------------------
+   Add Staff Page Button Styling
+---------------------------------*/
+
+/* -------------------------------
+   Add Staff Page Buttons
+---------------------------------*/
+
+.add-staff .form-actions {
+    display: flex;
+    justify-content: space-between; /* buttons aligned left */
+    gap: 12px;
+    margin-top: 20px;
+}
+
+/* Back button - like Delete button in manage staff */
+.add-staff .btn-back {
+     background: #6b7280; /* same as Back button */
+    color: white;
+        padding: 8px 16px;
+    border: none;
+    border-radius: 20px;
+    text-decoration: none;
+    font-weight: 500;
+    transition: 0.3s ease;
+}
+
+.add-staff .btn-back:hover {
+    background: #2f2b2b; /* darker red on hover */
+}
+
+/* Add Staff button - like Update button in edit staff page */
+.add-staff .leave-btn {
+        background: linear-gradient(135deg, #03256c, #505d68); /* same as Update button */
+    color: white;
+    padding: 8px 16px;
+    border: none;
+    border-radius: 20px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.add-staff .leave-btn:hover {
+    background: #161655; /* darker on hover */
+}
+/* Responsive for mobile */
+@media screen and (max-width: 600px) {
+    .add-staff .form-row {
+        flex-direction: column;
+    }
+    .add-staff .form-actions {
+        flex-direction: column;
+        gap: 10px;
+    }
+}
+/* --- Leave Requests Page (Admin) --- */
+.manage-leaves {
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #f3f4f6;
+    margin: 0;
+    padding: 0;
+}
+
+/* Wrapper for spacing and centering */
+.manage-leaves .leave-page-wrapper {
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 20px;
+}
+
+/* Back button (like delete button style) */
+/* Back button styling consistent with other pages */
+.manage-leaves .back-btn {
+    display: inline-block;
+    margin-bottom: 20px;
+    padding: 8px 16px;
+    background-color: #17243f; /* same gray as other back buttons */
+    color: white;
+    text-decoration: none;
+    border-radius: 20px;
+    font-weight: 500;
+    transition: 0.3s;
+}
+
+.manage-leaves .back-btn:hover {
+    background-color: #09244b; /* hover shade same as other back buttons */
+}
+/* Page heading */
+
+/* Leave requests table */
+.manage-leaves .leave-table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #ffffff;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+}
+
+.manage-leaves .leave-table th,
+.manage-leaves .leave-table td {
+    padding: 12px 15px;
+    text-align: left;
+}
+
+.manage-leaves .leave-table th {
+    background-color: #1f2937;
+    color: #f9fafb;
+    font-weight: 700;
+    font-size: 15px;
+}
+
+.manage-leaves .leave-table tr:nth-child(even) {
+    background-color: #f3f4f6;
+}
+
+.manage-leaves .leave-table tr:hover {
+    background-color: #e5e7eb;
+}
+
+/* Responsive adjustments */
+@media screen and (max-width: 768px) {
+    .manage-leaves .leave-table th,
+    .manage-leaves .leave-table td {
+        padding: 10px 8px;
+        font-size: 13px;
+    }
+}

@@ -1,0 +1,346 @@
+:root {
+  --imperial-blue: #03256c;
+  --white: #fbfffe;
+  --blue-slate: #505d68;
+
+  --bg: #fbfffe;
+  --bg-alt: #e4edf7;
+  --card-bg: #0b1b35;
+  --accent: var(--imperial-blue);
+  --accent-strong: #021b4a;
+
+  --text: #02101f;
+  --text-muted: var(--blue-slate);
+  --text-on-card: #f9fbff;
+
+  --shadow-soft: 0 18px 45px rgba(3, 37, 108, 0.35);
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  color: var(--text);
+  min-height: 100vh;
+
+  background:
+    linear-gradient(
+      rgba(33, 42, 62, 0.65),
+      rgba(33, 42, 62, 0.75)
+    ),
+    url("NIT_Kurukshetra_cutoff_AR6OZqE.avif");
+
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+main {
+  max-width: 1120px;
+  margin: 0 auto;
+  padding: 96px 20px 64px;
+}
+
+/* ============================= */
+/* NAVBAR */
+/* ============================= */
+
+.navbar {
+  position: sticky;
+  top: 0;
+  z-index: 20;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2px 20px;
+  backdrop-filter: blur(14px);
+  background: rgba(7, 18, 36, 0.85);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.4);
+}
+
+.navbar__brand {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2px;
+}
+
+.navbar__logo-img {
+  height: 45px;
+  width: 45px;
+  border-radius: 50%;
+  object-fit: cover;
+  background: white;
+  padding: 5px;
+}
+
+.navbar__brand-text {
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: #ffffff;
+  letter-spacing: 0.08em;
+}
+
+.navbar__links {
+  display: flex;
+  gap: 18px;
+  align-items: center;
+  font-size: 0.95rem;
+}
+
+.nav-link {
+  padding: 6px 14px;
+  border-radius: 999px;
+  color: rgba(255, 255, 255, 0.75);
+  transition: all 0.2s ease;
+}
+
+.nav-link:hover {
+  background: rgba(255, 255, 255, 0.1);
+  color: #ffffff;
+}
+
+.nav-link--active {
+  color: #ffffff;
+}
+
+.nav-link--primary {
+  background: linear-gradient(135deg, #03256c, #505d68);
+  color: #ffffff;
+}
+
+.nav-link--primary:hover {
+  background: var(--accent-strong);
+}
+
+/* ============================= */
+/* HERO SECTION */
+/* ============================= */
+
+.hero {
+  display: grid;
+  grid-template-columns: minmax(0, 1.3fr);
+  gap: 32px;
+  margin-bottom: 40px;
+}
+
+.hero__content {
+  padding: 32px 28px;
+  border-radius: 24px;
+  background:
+    radial-gradient(circle at top left, rgba(3, 37, 108, 0.22) 0, transparent 60%),
+    radial-gradient(circle at bottom right, rgba(80, 93, 104, 0.12) 0, transparent 65%),
+    linear-gradient(135deg, #fbfffe, #e4edf7);
+  border: 1px solid rgba(148, 163, 184, 0.7);
+  box-shadow: var(--shadow-soft);
+  position: relative;
+  overflow: hidden;
+}
+
+.hero__content > * {
+  position: relative;
+  z-index: 1;
+}
+
+.hero h1 {
+  font-size: clamp(1.8rem, 2.5vw + 0.6rem, 2.4rem);
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  line-height: 1.3;
+  margin-bottom: 18px;
+  color: #021b4a;
+  border-left: 4px solid #03256c;
+  padding-left: 16px;
+  text-shadow: 0 2px 6px rgba(3, 37, 108, 0.15);
+}
+
+.hero p {
+  max-width: 600px;
+  line-height: 1.6;
+  color: var(--text-muted);
+  font-size: 1rem;
+  margin-bottom: 24px;
+}
+
+/* ============================= */
+/* BUTTONS */
+/* ============================= */
+
+.btn {
+  border: none;
+  outline: none;
+  border-radius: 999px;
+  padding: 10px 20px;
+  font-size: 0.95rem;
+  font-weight: 500;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  transition: 0.2s ease;
+}
+
+.btn-primary {
+  background: linear-gradient(135deg, #03256c, #505d68);
+  color: var(--white);
+  box-shadow: 0 12px 28px rgba(3, 37, 108, 0.4);
+}
+
+.btn-primary:hover {
+  background: linear-gradient(135deg, #021b4a, #03256c);
+  transform: translateY(-2px);
+  box-shadow: 0 14px 32px rgba(3, 37, 108, 0.5);
+}
+
+/* ============================= */
+/* HOSTELS SECTION */
+/* ============================= */
+
+.hostels-section {
+  margin-top: 32px;
+  padding: 24px 22px 26px;
+  border-radius: 24px;
+  background:
+    radial-gradient(circle at top left, rgba(3, 37, 108, 0.22) 0, transparent 60%),
+    radial-gradient(circle at bottom right, rgba(80, 93, 104, 0.12) 0, transparent 65%),
+    linear-gradient(135deg, #fbfffe, #e4edf7);
+  border: 1px solid rgba(148, 163, 184, 0.7);
+  box-shadow: var(--shadow-soft);
+}
+
+.hostels-section h2 {
+  font-size: clamp(1.8rem, 2.5vw + 0.4rem, 2.3rem);
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  line-height: 1.3;
+  margin-bottom: 16px;
+  color: #021b4a;
+  border-left: 4px solid #03256c;
+  padding-left: 16px;
+  text-shadow: 0 2px 6px rgba(3, 37, 108, 0.15);
+}
+
+.section-subtitle {
+  margin: 0 0 18px;
+  font-size: 0.95rem;
+  color: var(--text-muted);
+}
+
+/* ============================= */
+/* HOSTEL GRID */
+/* ============================= */
+
+.hostel-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 18px;
+}
+
+.hostel-card {
+  padding: 22px 20px;
+  border-radius: 20px;
+  background:
+    radial-gradient(circle at top left, rgba(3, 37, 108, 0.18) 0, transparent 60%),
+    radial-gradient(circle at bottom right, rgba(80, 93, 104, 0.12) 0, transparent 65%),
+    linear-gradient(135deg, #fbfffe, #e4edf7);
+  border: 1px solid rgba(148, 163, 184, 0.6);
+  box-shadow: 0 15px 35px rgba(3, 37, 108, 0.15);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.hostel-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 20px 45px rgba(3, 37, 108, 0.25);
+}
+
+.hostel-card h3 {
+  margin: 0 0 10px;
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+.hostel-card p {
+  margin: 0 0 16px;
+  font-size: 0.95rem;
+  color: var(--text-muted);
+  line-height: 1.6;
+}
+
+/* ============================= */
+/* CAUVERY CARD */
+/* ============================= */
+
+.cauvery-card {
+  position: relative;
+  overflow: hidden;
+  min-height: 220px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-image:
+    linear-gradient(
+      rgba(175, 184, 204, 0.5),
+      rgba(80, 97, 135, 0.5)
+    ),
+    url("c8d053cf-adae-4438-b2dd-d308816851e1.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: #ffffff;
+ 
+
+}
+
+.cauvery-card h3 {
+  font-size: 1.8rem;
+  font-weight: 800;
+  letter-spacing: 0.06em;
+  margin-bottom: 22px;
+  color: #172e42;
+  text-align: center;
+ text-shadow:
+    0 0 1px rgba(0, 0, 0, 0.6),   /* soft outline */
+    0 2px 6px rgba(0, 0, 0, 0.4), /* depth */
+    0 6px 16px rgba(0, 0, 0, 0.25);
+
+}
+
+/* ============================= */
+/* FOOTER */
+/* ============================= */
+
+.footer {
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+  background: rgba(7, 18, 36, 0.85);
+  backdrop-filter: blur(12px);
+  padding: 18px 24px;
+  margin-top: 40px;
+}
+
+.footer__content {
+  max-width: 1120px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 0.85rem;
+  color: rgba(255, 255, 255, 0.8);
+}
