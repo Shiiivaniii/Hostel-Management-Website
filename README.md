@@ -1,6 +1,6 @@
 # 🏠 College Hostel Management System
 
-A web-based platform designed to **digitize and streamline hostel management operations**, replacing manual processes with an efficient and centralized system.
+A web-based platform designed to **digitalize and streamline hostel management operations**, replacing manual processes with an efficient and centralized system.
 
 ---
 
